@@ -1,13 +1,12 @@
 <template>
-  <div class="container">
-    <h1>hello world</h1>
-    <input type="text" placeholder="Search..."  > 
-  </div>
+    <Navbar/>
 </template>
 
 <script>
+import Navbar from './layout/navbar.vue';
+
 export default {
-  
+    components: { Navbar }
 }
 </script>
 

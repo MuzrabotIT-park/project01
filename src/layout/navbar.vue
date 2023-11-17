@@ -1,0 +1,178 @@
+<template>
+    <section class="navbar">
+        <!--  -->
+        <div class="logo">
+            <img :src="logoImage" alt="">
+        </div>
+        <!--  -->
+        <div class="ul">
+            <li v-for="(item, index) in menuArray" :key="index" >
+                <a :href="item.ctg_name.link">{{ item.ctg_name.text }}</a>
+                <i class="fa-solid fa-play fa-rotate-90"></i>
+            </li>
+        </div>
+        <!--  -->
+        <div class="navbar_search">
+            <i class="fas fa-search"></i>
+        </div>
+        <!--  -->
+        <div class="dark_Ligth">
+            <nav-dark-light/>
+        </div>
+        <!--  -->
+        <div class="navbar_btn">
+            
+        </div>
+    </section>
+</template>
+
+<script>
+import navDarkLight from './component/navDarkLight.vue'
+export default {
+  components: { navDarkLight },
+    data() {
+        return {
+            logoImage:require('../assets/images/Home/logo/logo.png'),
+            menuArray:[
+                {
+                    ctg_name:{
+                        text:'Home',
+                        link:''
+                    },
+                    menu_hover:
+                    {
+                        page:{
+                            text:'Homepage-1',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-2',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-3',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-4',
+                            link:''
+                        }
+                    }
+                },
+                {
+                    ctg_name:{
+                        text:'About ME',
+                        link:''
+                    },
+                    menu_hover:
+                    {
+                        page:{
+                            text:'Homepage-1',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-2',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-3',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-4',
+                            link:''
+                        }
+                    }
+                },
+                {
+                    ctg_name:{
+                        text:'Category',
+                        link:''
+                    },
+                    menu_hover:
+                    {
+                        page:{
+                            text:'Homepage-1',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-2',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-3',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-4',
+                            link:''
+                        }
+                    }
+                },
+                {
+                    ctg_name:{
+                        text:'Single Post',
+                        link:''
+                    },
+                    menu_hover:
+                    {
+                        page:{
+                            text:'Homepage-1',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-2',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-3',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-4',
+                            link:''
+                        }
+                    }
+                },
+                {
+                    ctg_name:{
+                        text:'Pages',
+                        link:''
+                    },
+                    menu_hover:
+                    {
+                        page:{
+                            text:'Homepage-1',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-2',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-3',
+                            link:''
+                        },
+                        page:{
+                            text:'Homepage-4',
+                            link:''
+                        }
+                    }
+                },
+                {
+                    ctg_name:{
+                        text:'Contact',
+                        link:''
+                    },
+                },
+            ]
+
+        }
+    },
+}
+</script>
+
+<style lang="scss" >
+
+    @import '../assets/styles/layout/navbar.scss'
+</style>
