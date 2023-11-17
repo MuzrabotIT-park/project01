@@ -1,0 +1,21 @@
+// container breakpoints
+$xl:1150px;
+$lg:970px;
+$md:730px;
+$sm:550px;
+$xs:320px;
+
+//  style
+$font_size:13px;
+$font_family:'Noto';
+
+// colors
+
+$color:#94A9C9;
+$bg_color:#131C31;
+$text_color:#b9e0f2;
+$background_color:#0F172A;
+$border_color:linear-gradient(#222F43, #222F43) padding-box, 
+linear-gradient(to right, rgb(14, 165, 234), rgb(11, 209, 209));
+$btnBg_color:rgb(14, 165, 234);
+$btnBg_colorTwo:linear-gradient(90deg, rgb(14, 165, 234), rgb(11, 209, 209) 51%, rgb(14, 165, 234)) var(--x, 0)/200%;

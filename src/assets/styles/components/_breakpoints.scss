@@ -1,0 +1,22 @@
+// media
+@mixin containerName($w) {
+    .container {
+        max-width: $w;
+    }
+}
+
+@include xl {
+    @include containerName($lg)
+}
+
+@include lg {
+    @include containerName($md)
+}
+
+@include md {
+    @include containerName($sm)
+}
+
+@include sm {
+    @include containerName(100%)
+}
