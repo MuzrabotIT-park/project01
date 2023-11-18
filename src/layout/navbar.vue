@@ -21,15 +21,16 @@
         </div>
         <!--  -->
         <div class="navbar_btn">
-            
+            <site_btnVue>Subscribe</site_btnVue>
         </div>
     </section>
 </template>
 
 <script>
-import navDarkLight from './component/navDarkLight.vue'
+import navDarkLight from './component/navDarkLight.vue';
+import site_btnVue from './component/site_btn.vue';
 export default {
-  components: { navDarkLight },
+  components: { navDarkLight,site_btnVue },
     data() {
         return {
             logoImage:require('../assets/images/Home/logo/logo.png'),
