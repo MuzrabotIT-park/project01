@@ -1,6 +1,6 @@
 <template>
   <button class="site_btn">
-    <slot />
+    <slot/>
   </button>
 </template>
 
@@ -24,18 +24,22 @@ export default {};
     )
     var(--x, 0) / 200%;
   color: #ffffff;
-  transition: 0.5s;
+  transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
   cursor: pointer;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 16px;
 }
 
 .site_btn:hover {
-    background: linear-gradient(
+  background: linear-gradient(
       90deg,
       rgb(14, 165, 234),
-      rgb(11, 209, 209) 51%,
+      rgb(11, 209, 209) 1%,
       rgb(14, 165, 234)
     )
-    var(--x, 0) / 80%;
+    var(--x, 0) / 100%;
+  box-shadow: 0 0 8px rgb(11, 209, 209) 
 }
 
 .site_btn:active {

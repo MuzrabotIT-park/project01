@@ -1,6 +1,6 @@
 <template>
   <label class="switch">
-    <span class="sun"
+    <span class="sun" @click="$emit('actionBody')"
       ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <g fill="#ffd43b">
           <circle r="5" cy="12" cx="12"></circle>
@@ -24,7 +24,7 @@
 export default {};
 </script>
 
-<style lang="scss" scoped >
+<style >
 .switch {
   font-size: 17px;
   position: relative;

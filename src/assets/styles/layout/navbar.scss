@@ -1,2 +1,50 @@
 @import '../components/_vars.scss';
 @import '../components/_mixsin.scss';
+
+.navbar{
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222F43;
+
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 0 20px;
+
+        li{
+            color:$color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            padding: 13px 17px;
+
+            a{
+                color:$color;
+                font-size: 16px;
+            }
+            
+            i{
+                margin-top: -3px;
+                font-size: 8px;
+                height: 8px;
+            }
+        }
+    }
+    //  menu end
+    .menu_box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        .navbar_search{
+            i{
+                font-size: 18px;
+                padding: 16px;
+            }
+        }
+    }
+}
